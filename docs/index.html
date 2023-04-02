@@ -9,14 +9,30 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">正在加载，请稍后...</div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      // logo: "_media/fb.png",
+      name: "税控接口帮助手册",
+      nameLink: "/",
+      // relativePath: true,
+      // coverpage: true,
+      // onlyCover: true,
+      // loadNavbar: true,
+      loadSidebar: true,
+      subMaxLevel: 2
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-pascal.min.js"></script>
+  <!-- 下边可以解决docsify serve预览时无滚动条问题 -->
+  <style type="text/css">
+    .content{
+      overflow: auto;
+    }
+  </style>
 </body>
 </html>
